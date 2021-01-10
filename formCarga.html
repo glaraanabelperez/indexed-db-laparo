@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="author" content="Lara Anabel Garcia Perez">
+        <meta name="description" content="Instrumental para laparoscopia">
+        <title>Laparocpy</title>
+    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">    
+        <link rel="stylesheet" href="formCarga.css">
+        <script src="validar2.js"></script>
+
+
+    </head>
+</head>
+<body class="contendeorPrincipal">
+        <header >
+            <nav class="web">
+                <button><a href=""><i class="fa fa-handshake-o fa-2x" aria-hidden="true"></i></a></button>
+                <p class="card-text">Mis publicaciones...</p>
+            </nav>
+        </header>
+        <br>
+
+        <section class="note-display" id="zonadatos">
+            <h2>Notes</h2>
+            <ul>
+    
+            </ul>
+        </section>
+
+        <main class="jumbotron">
+            <div class="imagenesCentrales">
+                <div class="card" style="width: 70%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Nueva Carga</h5>
+                      
+                      <form  id="formCarga" class="form" name="formulario">
+                        <div class="col-md-4 position-relative">
+                          <label class="form-label">Fecha</label>
+                          <input class="form-control" name="fecha" id="fecha" type="text" required>
+                          <label class="form-label">Categoria</label>
+                          <select name="categoria" id="categoria" required>
+                            <option value="grasper">grasper</option>
+                            <option value="otro">otro</option>
+                          </select>
+                          <label class="form-label">Titulo</label>
+                          <input class="form-control" name="titulo" id="titulo" type="text" required>
+                          <div class="valid-tooltip">
+                            Looks good!
+                          </div>
+                        </div>
+                        <div class="col-md-4 position-relative">
+                          <label class="form-label">subtitulo</label>
+                          <input class="form-control" name="subtitulo" id="subtitulo" type="text" required>
+                          <div class="valid-tooltip">
+                            Looks good!
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <input type="button" name="grabar" id="grabar" value="The Panda says..."/>
+                        </div>
+                      </form>
+
+
+                    </div>
+                </div>
+
+                <div class="card" style="width: 30%;">
+                    <div class="box-imgLogo" style="display: flex; flex-direction: row; margin: 6% 2% 0% 4%;">
+                        <img  style="width: 30%; margin-right: 5%;"src="images/logo_solo.jpg" alt="">
+                        <img  style="width: 30%;" src="images/logoEmail.jpg" alt="">
+                    </div>    
+
+                    <div class="card-body" style="padding: 0px 20px 0px 20px; height: 10%; margin-top: 5%;">
+                        <h1 class="display-4">Emailing</h1>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+</body>
+</html>
