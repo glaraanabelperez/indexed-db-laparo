@@ -26,13 +26,8 @@
             </nav>
         </header>
         <br>
-
-        <section class="note-display" id="zonadatos">
-            <h2>Notes</h2>
-            <ul>
-    
-            </ul>
-        </section>
+        <h2>Notes</h2>
+        <div class="note-display" id="zonadatos"></div>
 
         <main class="jumbotron">
             <div class="imagenesCentrales">
@@ -40,17 +35,21 @@
                     <div class="card-body">
                       <h5 class="card-title">Nueva Carga</h5>
                       
-                      <form  id="formCarga" class="form" name="formulario">
+                      <form  id="formCarga" class="form" name="forCarga">
                         <div class="col-md-4 position-relative">
+
                           <label class="form-label">Fecha</label>
-                          <input class="form-control" name="fecha" id="fecha" type="text" required>
+                          <input class="form-control" name="fecha" id="fecha" type="text" value="" required>
+                          
                           <label class="form-label">Categoria</label>
-                          <select name="categoria" id="categoria" required>
+                          <select name="categoria" id="categoria" value="" required>
                             <option value="grasper">grasper</option>
                             <option value="otro">otro</option>
                           </select>
+                          
                           <label class="form-label">Titulo</label>
-                          <input class="form-control" name="titulo" id="titulo" type="text" required>
+                          <input class="form-control" name="titulo" id="titulo" type="text" value ="" required>
+                          
                           <div class="valid-tooltip">
                             Looks good!
                           </div>
@@ -63,7 +62,7 @@
                           </div>
                         </div>
                         <div class="col-12">
-                          <input type="button" name="grabar" id="grabar" value="The Panda says..."/>
+                          <input type="button" name="grabar" id="grabar" data-action="add" value="ingresar"/>
                         </div>
                       </form>
 
