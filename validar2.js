@@ -77,10 +77,10 @@ function upDate(data){
 }
 
 function mostrar(){
-    zonadatos.innerHTML="";
     const t = bd.transaction(["productos"], "readonly");
     const objectStore = t.objectStore("productos");
     var cursor=objectStore.openCursor();
+    fragmento.textContent = '';
 
     cursor.onsuccess = (e) =>{
         var cursor=e.target.result;
@@ -109,7 +109,7 @@ function mostrar(){
             cursor.continue();
     
         }else{
-            //zonadatos.textContent = '';
+            zonadatos.textContent = '';
             zonadatos.appendChild(fragmento);
             console.log("aca");   
         }
